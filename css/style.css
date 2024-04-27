@@ -91,7 +91,7 @@ h2 {
 
 .profile {
   margin-top: 80px;
-  background-color: #46444b;
+  background-color: #46434d;
 }
 
 .profile__inner {
@@ -262,16 +262,86 @@ h2 {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .about__circle {
+  position: relative;
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #f7914d;
-  position: relative;
+  border: 1px solid #f7914d;
+}
+
+/* ROOT */
+
+:root {
+  --html-firstColor: 70%;
+  --html-secondColor: 75%;
+
+  --css-firstColor: 70%;
+  --css-secondColor: 75%;
+
+  --js-firstColor: 40%;
+  --js-secondColor: 45%;
+
+  --react-firstColor: 20%;
+  --react-secondColor: 25%;
+
+  --git-firstColor: 30%;
+  --git-secondColor: 35%;
+
+  --rest-firstColor: 10%;
+  --rest-secondColor: 15%;
+}
+
+.about__circle--html {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--html-firstColor),
+    rgba(0, 0, 0, 0) var(--html-secondColor)
+  );
+}
+
+.about__circle--css {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--css-firstColor),
+    rgba(0, 0, 0, 0) var(--css-secondColor)
+  );
+}
+
+.about__circle--js {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--js-firstColor),
+    rgba(0, 0, 0, 0) var(--js-secondColor)
+  );
+}
+
+.about__circle--react {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--react-firstColor),
+    rgba(0, 0, 0, 0) var(--react-secondColor)
+  );
+}
+
+.about__circle--git {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--git-firstColor),
+    rgba(0, 0, 0, 0) var(--git-secondColor)
+  );
+}
+
+.about__circle--rest {
+  background: linear-gradient(
+    to top,
+    rgba(247, 145, 77, 1) var(--rest-firstColor),
+    rgba(0, 0, 0, 0) var(--rest-secondColor)
+  );
 }
 
 .about__circle-text {
@@ -281,4 +351,5 @@ h2 {
   transform: translate(-50%, -50%);
   font-size: 32px;
   font-weight: 600;
+  text-transform: uppercase;
 }
