@@ -1,1 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  /*  font-family: "Open Sans", sans-serif; */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a,
+ul {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  padding-bottom: 50px;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 15px;
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #2d2933;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.logo__text {
+  color: #f7914d;
+}
+
+.nav {
+  width: 100%;
+  max-width: 600px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav__link:hover {
+  color: #f7914d;
+  transition: 0.3s;
+}
+
+.nav__link--active {
+  color: #f7914d;
+  border-bottom: 1px solid #f7914d;
+}
+
+/* PROFILE */
+
+.profile {
+  margin-top: 80px;
+  background-color: #46444b;
+}
+
+.profile__inner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__post {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.info__name {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.info__line {
+  margin-top: 50px;
+  width: 100%;
+  border-bottom: #fff solid 1px;
+  opacity: 0.3;
+}
+
+.info__details {
+  display: flex;
+  gap: 30px;
+}
+
+.info__details-list {
+  margin-top: 10px;
+}
+
+.info__details-list > li {
+  margin-top: 20px;
+}
+
+.info__details-item {
+  font-weight: 600;
+}
+
+.info__details-birth {
+  font-family: "Open sans", sans-serif;
+  font-style: italic;
+}
+
+.info__details-address {
+  font-family: "Open sans", sans-serif;
+  font-style: italic;
+}
+
+.info__details-email {
+  font-family: "Open sans", sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.info__details-phone {
+  font-family: "Open sans", sans-serif;
+  font-style: italic;
+}
+
+.profile__btn {
+  margin-top: 40px;
+  display: block;
+  max-width: 350px;
+  padding: 15px 90px;
+  background-color: #f7914d;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profile__photo {
+  height: 450px;
+}
+
+/* EDUCATION */
+
+.education {
+  background: linear-gradient(#5e5a63, #2d2933);
+}
+
+.education__inner {
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 870px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education__title {
+  border-bottom: 2px solid #fff;
+}
+
+.education__study {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 870px;
+}
+
+.education__list {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.education__item {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.education__span {
+  font-style: normal;
+  color: #f7914d;
+}
+
+.education__list--line {
+  position: relative;
+}
+
+.education__list--line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+/* ABOUT */
+
+.about {
+  background: linear-gradient(#5e5a63, #2d2933);
+}
+
+.about__inner {
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 870px;
+}
+
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about__text {
+  width: 50%;
+  font-style: italic;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.about__skills {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about__circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #f7914d;
+  position: relative;
+}
+
+.about__circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 600;
+}
