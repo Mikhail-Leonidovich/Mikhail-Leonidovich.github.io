@@ -12,9 +12,9 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#profile" class="logo"
-            >Portfo<span class="logo__text">lio</span></a
-          >
+          <a href="#profile" class="logo">
+            Portfo<span class="logo__text">lio</span>
+          </a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -29,10 +29,10 @@
                 <a href="#about" class="nav__link">About me</a>
               </li>
               <li class="nav__item">
-                <a href="#contacts" class="nav__link">Contacts</a>
+                <a href="#experiance" class="nav__link">Experiance</a>
               </li>
               <li class="nav__item">
-                <a href="#experiance" class="nav__link">Experiance</a>
+                <a href="#contacts" class="nav__link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -75,6 +75,7 @@
           </div>
         </div>
       </section>
+      <div class="parallax"></div>
 
       <!-- EDUCATION -->
       <section class="education" id="education">
@@ -125,22 +126,26 @@
           </div>
         </div>
       </section>
+      <div class="parallax"></div>
+
+      <!-- ABOUT -->
       <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
             <h2 class="about__title">About me</h2>
             <div class="about__body">
               <p class="about__text">
-                Hi all. My name is Mikhail, I'm 30 years old, I'm a front-end
-                developer. Currently, I am actively studying JavaScript, as well
-                as English. I am a hardworking and sociable person, which makes
-                working with me effective and enjoyable. I am also a quick
-                learner and thirst for knowledge and new solutions. In addition,
-                I have been preparing to become a web developer for about a year
-                now and have been gaining knowledge through various resources:
-                portals, blogs, articles, advice from friends who already work
-                in IT, any materials that allow me to develop. Unfortunately, I
-                have no experience working on large projects yet, but I am very
+                <span class="about__text-span">Hello everyone.</span> My name is
+                Mikhail, I'm 30 years old, I'm a front-end developer. Currently,
+                I am actively studying JavaScript, as well as English. I am a
+                hardworking and sociable person, which makes working with me
+                effective and enjoyable. I am also a quick learner and thirst
+                for knowledge and new solutions. In addition, I have been
+                preparing to become a web developer for about a year now and
+                have been gaining knowledge through various resources: portals,
+                blogs, articles, advice from friends who already work in IT, any
+                materials that allow me to develop. Unfortunately, I have no
+                experience working on large projects yet, but I am very
                 interested in front-end development and would like to become a
                 part of it.
               </p>
@@ -168,9 +173,46 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <div class="parallax"></div>
+
+      <!-- CONTACTS -->
+      <section class="contacts" id="contacts">
         <div class="container">
-          <div class="contacts__inner"></div>
+          <div class="contacts__inner">
+            <h2 class="contacts__title">Contact Me!</h2>
+            <form class="form" action="#">
+              <div class="form__left">
+                <p class="form__title">Get in touch</p>
+                <p class="form__line"></p>
+                <label class="form__label" for="username">Name</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="username"
+                  autocomplete="off"
+                />
+                <label class="form__label" for="email">E-mail</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="email"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form__right">
+                <label class="form__label" for="message">Message</label>
+                <textarea
+                  class="form__textarea"
+                  name="message"
+                  placeholder="Write text here..."
+                  cols="20"
+                  rows="10"
+                  autocomplete="off"
+                ></textarea>
+                <button class="form__btn">send message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
